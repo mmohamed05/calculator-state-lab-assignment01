@@ -1,0 +1,135 @@
+[
+  {
+    "checkpoint": "release-operand",
+    "expected": "3",
+    "actual": "3",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-dark-entry",
+    "expected": "3",
+    "actual": "3",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-running-total",
+    "expected": "5",
+    "actual": "5",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-result",
+    "expected": "20",
+    "actual": "20",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-light-result",
+    "expected": "20",
+    "actual": "20",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-repeated-equals",
+    "expected": "20",
+    "actual": "20",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-fresh-digit",
+    "expected": "6",
+    "actual": "6",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-replacement",
+    "expected": "18",
+    "actual": "18",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-incomplete",
+    "expected": "7",
+    "actual": "7",
+    "context_check": "7 + \u2014 enter a number",
+    "pass": true
+  },
+  {
+    "checkpoint": "release-resumed",
+    "expected": "9",
+    "actual": "9",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-ac-stale",
+    "expected": "7",
+    "actual": "7",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-fraction",
+    "expected": "3.5",
+    "actual": "3.5",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-all-operators",
+    "expected": "6",
+    "actual": "6",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-error",
+    "expected": "Error",
+    "actual": "Error",
+    "context_check": "Cannot divide by zero",
+    "pass": true
+  },
+  {
+    "checkpoint": "release-dark-error",
+    "expected": "Error",
+    "actual": "Error",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-recovery-digit",
+    "expected": "3",
+    "actual": "3",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-digit-recovery",
+    "expected": "7",
+    "actual": "7",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-second-error",
+    "expected": "Error",
+    "actual": "Error",
+    "context_check": null,
+    "pass": true
+  },
+  {
+    "checkpoint": "release-ac-recovery",
+    "expected": "0",
+    "actual": "0",
+    "context_check": null,
+    "pass": true
+  }
+]

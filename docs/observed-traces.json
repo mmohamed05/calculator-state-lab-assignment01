@@ -1,0 +1,902 @@
+[
+  {
+    "sequence": "2 + 3 × 4 =",
+    "states": [
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": null,
+        "operand": "2",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "2",
+        "accumulator": 2.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": 2.0,
+        "operand": "3",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "×",
+        "display": "5",
+        "accumulator": 5.0,
+        "operand": "",
+        "pending": "×",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "4",
+        "display": "4",
+        "accumulator": 5.0,
+        "operand": "4",
+        "pending": "×",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "20",
+        "accumulator": 20.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "9 + × 2 =",
+    "states": [
+      {
+        "key": "9",
+        "display": "9",
+        "accumulator": null,
+        "operand": "9",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "9",
+        "accumulator": 9.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "×",
+        "display": "9",
+        "accumulator": 9.0,
+        "operand": "",
+        "pending": "×",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": 9.0,
+        "operand": "2",
+        "pending": "×",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "18",
+        "accumulator": 18.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "7 + = 2 =",
+    "states": [
+      {
+        "key": "7",
+        "display": "7",
+        "accumulator": null,
+        "operand": "7",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "7",
+        "accumulator": 7.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "7",
+        "accumulator": 7.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": 7.0,
+        "operand": "2",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "9",
+        "accumulator": 9.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "2 + 3 = = 4",
+    "states": [
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": null,
+        "operand": "2",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "2",
+        "accumulator": 2.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": 2.0,
+        "operand": "3",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "5",
+        "accumulator": 5.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "5",
+        "accumulator": 5.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      },
+      {
+        "key": "4",
+        "display": "4",
+        "accumulator": null,
+        "operand": "4",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "1 2 + 6 − 3 × 2 ÷ 5 =",
+    "states": [
+      {
+        "key": "1",
+        "display": "1",
+        "accumulator": null,
+        "operand": "1",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "12",
+        "accumulator": null,
+        "operand": "12",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "12",
+        "accumulator": 12.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "6",
+        "display": "6",
+        "accumulator": 12.0,
+        "operand": "6",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "−",
+        "display": "18",
+        "accumulator": 18.0,
+        "operand": "",
+        "pending": "−",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": 18.0,
+        "operand": "3",
+        "pending": "−",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "×",
+        "display": "15",
+        "accumulator": 15.0,
+        "operand": "",
+        "pending": "×",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": 15.0,
+        "operand": "2",
+        "pending": "×",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "÷",
+        "display": "30",
+        "accumulator": 30.0,
+        "operand": "",
+        "pending": "÷",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "5",
+        "display": "5",
+        "accumulator": 30.0,
+        "operand": "5",
+        "pending": "÷",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "6",
+        "accumulator": 6.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "0 0 1 2 + 0 0 3 =",
+    "states": [
+      {
+        "key": "0",
+        "display": "0",
+        "accumulator": null,
+        "operand": "0",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "0",
+        "display": "0",
+        "accumulator": null,
+        "operand": "0",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "1",
+        "display": "1",
+        "accumulator": null,
+        "operand": "1",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "12",
+        "accumulator": null,
+        "operand": "12",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "12",
+        "accumulator": 12.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "0",
+        "display": "0",
+        "accumulator": 12.0,
+        "operand": "0",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "0",
+        "display": "0",
+        "accumulator": 12.0,
+        "operand": "0",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": 12.0,
+        "operand": "3",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "15",
+        "accumulator": 15.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "7 ÷ 2 =",
+    "states": [
+      {
+        "key": "7",
+        "display": "7",
+        "accumulator": null,
+        "operand": "7",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "÷",
+        "display": "7",
+        "accumulator": 7.0,
+        "operand": "",
+        "pending": "÷",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": 7.0,
+        "operand": "2",
+        "pending": "÷",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "3.5",
+        "accumulator": 3.5,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "8 + 2 = AC 3 + 4 =",
+    "states": [
+      {
+        "key": "8",
+        "display": "8",
+        "accumulator": null,
+        "operand": "8",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "8",
+        "accumulator": 8.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": 8.0,
+        "operand": "2",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "10",
+        "accumulator": 10.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      },
+      {
+        "key": "AC",
+        "display": "0",
+        "accumulator": null,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": null,
+        "operand": "3",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "3",
+        "accumulator": 3.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "4",
+        "display": "4",
+        "accumulator": 3.0,
+        "operand": "4",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "7",
+        "accumulator": 7.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "8 + 2 × AC 4 + 1 =",
+    "states": [
+      {
+        "key": "8",
+        "display": "8",
+        "accumulator": null,
+        "operand": "8",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "8",
+        "accumulator": 8.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "2",
+        "accumulator": 8.0,
+        "operand": "2",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "×",
+        "display": "10",
+        "accumulator": 10.0,
+        "operand": "",
+        "pending": "×",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "AC",
+        "display": "0",
+        "accumulator": null,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "4",
+        "display": "4",
+        "accumulator": null,
+        "operand": "4",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "4",
+        "accumulator": 4.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "1",
+        "display": "1",
+        "accumulator": 4.0,
+        "operand": "1",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "5",
+        "accumulator": 5.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "8 ÷ 0 = 3 + 4 =",
+    "states": [
+      {
+        "key": "8",
+        "display": "8",
+        "accumulator": null,
+        "operand": "8",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "÷",
+        "display": "8",
+        "accumulator": 8.0,
+        "operand": "",
+        "pending": "÷",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "0",
+        "display": "0",
+        "accumulator": 8.0,
+        "operand": "0",
+        "pending": "÷",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "Error",
+        "accumulator": null,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": "Cannot divide by zero. Enter a digit or tap AC to restart."
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": null,
+        "operand": "3",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "3",
+        "accumulator": 3.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "4",
+        "display": "4",
+        "accumulator": 3.0,
+        "operand": "4",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "7",
+        "accumulator": 7.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "8 ÷ 0 = AC",
+    "states": [
+      {
+        "key": "8",
+        "display": "8",
+        "accumulator": null,
+        "operand": "8",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "÷",
+        "display": "8",
+        "accumulator": 8.0,
+        "operand": "",
+        "pending": "÷",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "0",
+        "display": "0",
+        "accumulator": 8.0,
+        "operand": "0",
+        "pending": "÷",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "Error",
+        "accumulator": null,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": "Cannot divide by zero. Enter a digit or tap AC to restart."
+      },
+      {
+        "key": "AC",
+        "display": "0",
+        "accumulator": null,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "sequence": "1 2 + 3 × 4 =",
+    "states": [
+      {
+        "key": "1",
+        "display": "1",
+        "accumulator": null,
+        "operand": "1",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "2",
+        "display": "12",
+        "accumulator": null,
+        "operand": "12",
+        "pending": null,
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "+",
+        "display": "12",
+        "accumulator": 12.0,
+        "operand": "",
+        "pending": "+",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "3",
+        "display": "3",
+        "accumulator": 12.0,
+        "operand": "3",
+        "pending": "+",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "×",
+        "display": "15",
+        "accumulator": 15.0,
+        "operand": "",
+        "pending": "×",
+        "awaiting": true,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "4",
+        "display": "4",
+        "accumulator": 15.0,
+        "operand": "4",
+        "pending": "×",
+        "awaiting": false,
+        "result": false,
+        "error": null
+      },
+      {
+        "key": "=",
+        "display": "60",
+        "accumulator": 60.0,
+        "operand": "",
+        "pending": null,
+        "awaiting": false,
+        "result": true,
+        "error": null
+      }
+    ]
+  }
+]
