@@ -19,7 +19,7 @@
 | Build/install actual release | flutter build apk; adb install | release-build.log, release-install.log, release-smoke.json |
 | Verified questions 01–06 | official same-edition HTML expanded details | assignment-source.html; implementation rationale |
 | Two prompts × two actual services | supplied Gemini and ChatGPT responses, October 12, 2026 | COMPLETE: two comparisons in rationale; 30 tests passed; ai-comparison-tests.log |
-| Reflection 06 Gemini/ChatGPT architecture comparison | extra exact prompt prepared | PENDING separate architecture responses; no Prompt 2 substitution |
+| Reflection 06 Gemini/ChatGPT architecture comparison | exact separate prompt plus both supplied summaries | COMPLETE: critical comparison and source/test evidence in Reflection 06 |
 | Accessible complete repository | isolated calculator project | repository-access evidence after publication |
 | Three deliverables | submission directory | final file manifest and APK hash |
 | Student review / policy / deadline | disclosure and pending checklist | student must confirm AI rules, personal wording, LMS timezone/folder |
