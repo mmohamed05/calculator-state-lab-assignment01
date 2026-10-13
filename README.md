@@ -44,7 +44,7 @@ flutter test --reporter expanded
 dart run tool/trace.dart
 ```
 
-On October 12, 2026, the automated suite passed **29 tests** (22 model, 7 widget); analyzer: **no issues**. Tests cover intermediate totals, operator replacement, incomplete and repeated equals, all four operators, leading zeros, fractional results, all AC phases, stale accumulators, error recovery, overflow, display rounding, theme state preservation, and semantics.
+On October 12, 2026, the automated suite passed **30 tests** (23 model, 7 widget); analyzer: **no issues**. Tests cover intermediate totals, operator replacement, incomplete and repeated equals, all four operators, leading zeros, fractional results, all AC phases, stale accumulators, error recovery, overflow, display rounding, theme state preservation, and semantics. The targeted test `agent AC probes validate reset before operator or digit` additionally verifies both services’ exact post-AC continuations and every internal reset field.
 
 Widget tests check 320×640 logical pixels at 1×, 2× and 3× text scales, reachable controls with at least 48×48 logical-pixel targets, operator/theme labels, committed-result live regions, and Flutter's text-contrast/labeled-target guidelines in both themes including errors. The vertically scrollable layout keeps essential keys reachable at large text sizes; long numeric displays scroll horizontally. These automated checks do not replace a TalkBack listening/focus-order test or testing on a physical phone.
 
@@ -56,7 +56,7 @@ Material color schemes cover background, display, controls, labels, and error su
 
 OpenAI Codex assisted with the implementation, tests, device automation, documentation, and repository preparation. Automated work is not represented as student-performed manual testing. Review and understand this code and follow the course's AI-use policy.
 
-**Not submission-ready:** actual two-service responses/comparisons for the two required AI prompts and reflection 06 are still pending. The complete reflection wording was recovered from the matching official alternate-edition page. The implementation rationale is an AI-assisted draft for student review. Confirm the LMS deadline timezone and submission folder independently; the guide states October 12, 2026 at 11:59 PM without a timezone. No LMS submission was performed.
+**Not submission-ready:** the two Test Drive comparisons are complete from the student-supplied Gemini and ChatGPT responses dated October 12, 2026. The separate Reflection 06 architecture responses/comparison remain pending; Prompt 2 cannot substitute for that prompt. The complete reflection wording was recovered from the matching official alternate-edition page. The implementation rationale is an AI-assisted draft for student review. Confirm the LMS deadline timezone and submission folder independently; the guide states October 12, 2026 at 11:59 PM without a timezone. No LMS submission was performed.
 
 Assignment source: https://codd.cs.gsu.edu/~lhenry23/mad/hw/hw01/index2.html#top
 

@@ -110,6 +110,25 @@ void main() {
     trace(m, '8 + 2 = AC 3 + 4 =');
     expect(m.displayText, '7');
   });
+  test('agent AC probes validate reset before operator or digit', () {
+    for (final continuation in ['+ 5 =', '2 × 4 =']) {
+      final m = CalculatorModel();
+      trace(m, '5 + 3 =');
+      expect(m.displayText, '8');
+      m.equals();
+      expect(m.displayText, '8');
+      m.clear();
+      expect(m.displayText, '0');
+      expect(m.accumulator, isNull);
+      expect(m.currentOperand, '');
+      expect(m.pendingOperator, isNull);
+      expect(m.awaitingOperand, false);
+      expect(m.resultCompleted, false);
+      expect(m.error, isNull);
+      trace(m, continuation);
+      expect(m.displayText, continuation.startsWith('+') ? '5' : '8');
+    }
+  });
   test('AC stale accumulator during chain', () {
     final m = CalculatorModel();
     trace(m, '8 + 2 × AC 4 + 1 =');

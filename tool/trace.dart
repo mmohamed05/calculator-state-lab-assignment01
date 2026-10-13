@@ -5,6 +5,11 @@ import 'package:calculator_app/calculator_model.dart';
 
 void main() {
   final cases = [
+    '5 + + 3 =',
+    '5 + 3 = =',
+    '5 + 3 AC',
+    '5 + 3 = AC + 5 =',
+    '5 + 3 = AC 2 × 4 =',
     '2 + 3 × 4 =',
     '9 + × 2 =',
     '7 + = 2 =',
